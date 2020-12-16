@@ -12,7 +12,8 @@ apt-get install -y \
     ca-certificates \
     curl \
     gnupg-agent \
-    software-properties-common
+    software-properties-common \
+    python3-pip
 
 curl -fsSL https://download.docker.com/linux/debian/gpg | apt-key add -
 
@@ -27,9 +28,7 @@ apt-get update -y
 
 apt-get install -y docker-ce docker-ce-cli containerd.io
 
-curl -L "https://github.com/docker/compose/releases/download/1.25.5/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
-
-chmod +x /usr/local/bin/docker-compose
+pip install docker-compose
 
 docker --version
 docker-compose --version
