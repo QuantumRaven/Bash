@@ -28,7 +28,7 @@ apt-get update -y
 
 apt-get install -y docker-ce docker-ce-cli containerd.io
 
-pip install docker-compose
+pip3 install docker-compose
 
 docker --version
 docker-compose --version
