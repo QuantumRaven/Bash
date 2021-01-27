@@ -19,4 +19,4 @@ curl https://download.jitsi.org/jitsi-key.gpg.key | sh -c 'gpg --dearmor > /usr/
 echo 'deb [signed-by=/usr/share/keyrings/jitsi-keyring.gpg] https://download.jitsi.org stable/' | tee /etc/apt/sources.list.d/jitsi-stable.list > /dev/null
 apt install -y jitsi-meet
 
-./secure_jitsi_install.sh
+echo "Run ./secure_jitsi_install.sh to secure Jitsi"
